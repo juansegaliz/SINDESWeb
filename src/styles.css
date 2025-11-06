@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary: #BF0009;
+  --color-secondary: #E5E7EB;
+  --color-tertiary: #9CA3AF;
+  --color-quaternary: #111827;
+  --color-primary-600: #A50008;
+  --color-primary-700: #8C0007;
+  --color-secondary-50: #F9FAFB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  @apply text-quaternary bg-white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
