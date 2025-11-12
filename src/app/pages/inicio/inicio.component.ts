@@ -46,7 +46,8 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
             <app-button variant="primary" size="lg" routerLink="/contacto">
               Únete al Semillero
             </app-button>
-            <app-button variant="outline" size="lg" routerLink="/proyectos" class="text-white border-white hover:bg-white hover:text-quaternary">
+
+            <app-button variant="primary" size="lg" routerLink="/proyectos" class="flex flex-col sm:flex-row gap-4 justify-center">
               Ver Proyectos
             </app-button>
           </div>
@@ -69,18 +70,22 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
             <div class="text-4xl font-bold text-primary mb-2">15+</div>
             <div class="text-tertiary text-sm">Integrantes Activos</div>
           </div>
+
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2">20+</div>
             <div class="text-tertiary text-sm">Proyectos Completados</div>
           </div>
+
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2">5</div>
             <div class="text-tertiary text-sm">Líneas de Investigación</div>
           </div>
+
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2">10+</div>
             <div class="text-tertiary text-sm">Reconocimientos</div>
           </div>
+          
         </div>
       </div>
     </section>
