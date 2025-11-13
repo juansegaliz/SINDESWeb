@@ -17,77 +17,79 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
     <app-section
       titulo="Equipo de Trabajo"
       subtitulo="Conoce a los investigadores y desarrolladores que hacen posible SINDES"
-      paddingY="xl">
+      paddingY="sm">
 
       <!-- Coordinador(es) -->
-      <div class="mb-16">
-        <h3 class="text-2xl font-bold text-quaternary mb-8 flex items-center gap-3">
-          <app-icon name="award" [size]="28" classes="text-primary"></app-icon>
-          Coordinación
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <app-card
-            *ngFor="let miembro of coordinadores()"
-            variant="elevated"
-            padding="lg">
-            <div class="flex flex-col items-center text-center">
-              <app-avatar
-                [src]="miembro.fotoUrl"
-                [alt]="miembro.nombre"
-                size="xl"
-                class="mb-4">
-              </app-avatar>
+      <div class="mb-16 flex flex-col items-center text-center">
+  <h3 class="text-2xl font-bold text-quaternary mb-8 flex items-center justify-center gap-3">
+    <app-icon name="award" [size]="28" classes="text-primary"></app-icon>
+    Coordinación
+  </h3>
 
-              <h4 class="text-xl font-semibold text-quaternary mb-2">
-                {{ miembro.nombre }}
-              </h4>
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+    <app-card
+      *ngFor="let miembro of coordinadores()"
+      variant="elevated"
+      padding="lg"
+      class="w-full max-w-sm">
+      <div class="flex flex-col items-center text-center">
+        <app-avatar
+          [src]="miembro.fotoUrl"
+          [alt]="miembro.nombre"
+          size="xl"
+          class="mb-4">
+        </app-avatar>
 
-              <app-badge variant="primary" class="mb-4">
-                {{ miembro.rol }}
-              </app-badge>
+        <h4 class="text-xl font-semibold text-quaternary mb-2">
+          {{ miembro.nombre }}
+        </h4>
 
-              <p *ngIf="miembro.bio" class="text-tertiary text-sm mb-4 leading-relaxed">
-                {{ miembro.bio }}
-              </p>
+        <app-badge variant="primary" class="mb-4">
+          {{ miembro.rol }}
+        </app-badge>
 
-              <!-- Enlaces -->
-              <div *ngIf="miembro.links" class="flex gap-3">
-                <a
-                  *ngIf="miembro.links.github"
-                  [href]="miembro.links.github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                  [attr.aria-label]="'GitHub de ' + miembro.nombre">
-                  <app-icon name="github" [size]="20"></app-icon>
-                </a>
+        <p *ngIf="miembro.bio" class="text-tertiary text-sm mb-4 leading-relaxed">
+          {{ miembro.bio }}
+        </p>
 
-                <a
-                  *ngIf="miembro.links.linkedin"
-                  [href]="miembro.links.linkedin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                  [attr.aria-label]="'LinkedIn de ' + miembro.nombre">
-                  <app-icon name="linkedin" [size]="20"></app-icon>
-                </a>
+        <div *ngIf="miembro.links" class="flex gap-3 justify-center">
+          <a
+            *ngIf="miembro.links.github"
+            [href]="miembro.links.github"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            [attr.aria-label]="'GitHub de ' + miembro.nombre">
+            <app-icon name="github" [size]="20"></app-icon>
+          </a>
 
-                <a
-                  *ngIf="miembro.links.email"
-                  [href]="'mailto:' + miembro.links.email"
-                  class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                  [attr.aria-label]="'Email de ' + miembro.nombre">
-                  <app-icon name="mail" [size]="20"></app-icon>
-                </a>
-              </div>
-            </div>
-          </app-card>
+          <a
+            *ngIf="miembro.links.linkedin"
+            [href]="miembro.links.linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            [attr.aria-label]="'LinkedIn de ' + miembro.nombre">
+            <app-icon name="linkedin" [size]="20"></app-icon>
+          </a>
+
+          <a
+            *ngIf="miembro.links.email"
+            [href]="'mailto:' + miembro.links.email"
+            class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            [attr.aria-label]="'Email de ' + miembro.nombre">
+            <app-icon name="mail" [size]="20"></app-icon>
+          </a>
         </div>
       </div>
+    </app-card>
+  </div>
+</div>
+
 
       <!-- Integrantes -->
       <div>
-        <h3 class="text-2xl font-bold text-quaternary mb-8 flex items-center gap-3">
+        <h3 class="text-2xl font-bold text-quaternary mb-8 flex items-center gap-3 flex flex-col items-center text-center">
           <app-icon name="users" [size]="28" classes="text-primary"></app-icon>
           Integrantes
         </h3>

@@ -5,7 +5,6 @@ import { LINEAS_SEED } from '../data/lineas.data';
 import { PROYECTOS_SEED } from '../data/proyectos.data';
 import { EVENTOS_SEED } from '../data/eventos.data';
 import { LOGROS_SEED } from '../data/logros.data';
-import { RECURSOS_SEED } from '../data/recursos.data';
 import { GALERIA_SEED } from '../data/galeria.data';
 
 @Injectable({
@@ -18,7 +17,6 @@ export class DataService {
   proyectos = signal<Proyecto[]>(PROYECTOS_SEED);
   eventos = signal<Evento[]>(EVENTOS_SEED);
   logros = signal<Logro[]>(LOGROS_SEED);
-  recursos = signal<Recurso[]>(RECURSOS_SEED);
   galeria = signal<GaleriaItem[]>(GALERIA_SEED);
 
   // Métodos para obtener datos
@@ -48,9 +46,6 @@ export class DataService {
     );
   }
 
-  getRecursos() {
-    return this.recursos();
-  }
 
   getGaleria() {
     return this.galeria();

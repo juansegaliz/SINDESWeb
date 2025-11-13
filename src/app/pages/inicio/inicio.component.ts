@@ -10,6 +10,7 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
   standalone: true,
   imports: [CommonModule, ButtonComponent, CardComponent, IconComponent],
   template: `
+
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-quaternary to-gray-800 text-white overflow-hidden">
       <!-- Background Image -->
@@ -20,21 +21,23 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
           class="w-full h-full object-cover">
       </div>
 
+
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div class="text-center">
+
           <!-- Logo combinado -->
           <div class="flex justify-center items-center gap-4 mb-8">
-            <div class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center shadow-2xl">
-              <span class="text-white font-bold text-4xl">S</span>
+            <div class="w-24 h-20 bg-primary rounded-2xl flex items-center justify-center shadow-2xl">
+              <span class="text-white font-bold text-4xl">FESC</span>
             </div>
           </div>
 
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          <h1 class="text-4xl md:text-6xl font-bold mb-8">
             SINDES<br>
             <span class="text-primary">Semillero de Investigación</span>
           </h1>
 
-          <p class="text-xl md:text-2xl text-gray-300 mb-4">
+          <p class="text-xl md:text-2xl text-gray-300 mb-6">
             Desarrollo de Software e Inteligencia Artificial
           </p>
 
@@ -42,13 +45,9 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
             Fundación de Estudios Superiores Comfanorte - FESC
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <app-button variant="primary" size="lg" routerLink="/contacto">
-              Únete al Semillero
-            </app-button>
-
-            <app-button variant="primary" size="lg" routerLink="/proyectos" class="flex flex-col sm:flex-row gap-4 justify-center">
-              Ver Proyectos
+          <div class="flex justify-center">
+            <app-button variant="primary" size="lg" routerLink="/equipo">
+              Ver Integrantes
             </app-button>
           </div>
         </div>
@@ -98,72 +97,69 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Card 1: Líneas -->
+
+        <!-- Card 1: Proyectos -->
+          <app-card variant="elevated" imagenUrl="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800">
+            <div class="space-y-3">
+              <div class="flex justify-center gap-2 text-primary">
+                <app-icon name="code" [size]="24"></app-icon>
+                <h3 class="text-xl font-semibold">Proyectos Activos</h3>
+              </div>
+              <p class="text-tertiary text-center">
+                Descubre los proyectos en los que estamos trabajando y sus impactos.
+              </p>
+              <br><br>
+              <div class="flex justify-center">
+                <app-button variant="outline" size="sm" routerLink="/proyectos">
+                  Ver Proyectos
+                  <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
+                </app-button>
+              </div>
+            </div>
+          </app-card>
+
+          <!-- Card 2: Líneas -->
           <app-card variant="elevated" imagenUrl="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800">
             <div class="space-y-3">
               <div class="flex items-center gap-2 text-primary">
                 <app-icon name="brain" [size]="24"></app-icon>
                 <h3 class="text-xl font-semibold">Líneas de Investigación</h3>
               </div>
-              <p class="text-tertiary">
+              <p class="text-tertiary text-center">
                 Explora nuestras áreas de especialización: IA, desarrollo de software, ciencia de datos y más.
               </p>
-              <app-button variant="outline" size="sm" routerLink="/lineas" class="w-full mt-4">
-                Ver Líneas
-                <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
-              </app-button>
-            </div>
-          </app-card>
-
-          <!-- Card 2: Proyectos -->
-          <app-card variant="elevated" imagenUrl="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800">
-            <div class="space-y-3">
-              <div class="flex items-center gap-2 text-primary">
-                <app-icon name="code" [size]="24"></app-icon>
-                <h3 class="text-xl font-semibold">Proyectos Activos</h3>
+              <br>  
+              <div class="flex justify-center">
+                <app-button variant="outline" size="sm" routerLink="/lineas">
+                  Ver Líneas
+                  <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
+                </app-button>
               </div>
-              <p class="text-tertiary">
-                Descubre los proyectos en los que estamos trabajando y sus impactos.
-              </p>
-              <app-button variant="outline" size="sm" routerLink="/proyectos" class="w-full mt-4">
-                Ver Proyectos
-                <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
-              </app-button>
             </div>
           </app-card>
 
-          <!-- Card 3: Eventos -->
+          <!-- Card 3: Logros -->
           <app-card variant="elevated" imagenUrl="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800">
             <div class="space-y-3">
-              <div class="flex items-center gap-2 text-primary">
+              <div class="flex justify-center gap-2 text-primary">
                 <app-icon name="calendar" [size]="24"></app-icon>
-                <h3 class="text-xl font-semibold">Eventos y Talleres</h3>
+                <h3 class="text-xl font-semibold">Logros Sindes</h3>
               </div>
-              <p class="text-tertiary">
-                Participa en nuestros eventos, talleres y convocatorias abiertas.
+              
+              <p class="text-tertiary text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
-              <app-button variant="outline" size="sm" routerLink="/eventos" class="w-full mt-4">
-                Ver Eventos
-                <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
-              </app-button>
+
+              <br><br>
+              <div class="flex justify-center">
+                <app-button variant="outline" size="sm" routerLink="/logros">
+                  Ver Logros
+                  <app-icon name="arrow-right" [size]="16" classes="ml-2"></app-icon>
+                </app-button>
+              </div>
             </div>
           </app-card>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-primary text-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">
-          ¿Quieres formar parte de SINDES?
-        </h2>
-        <p class="text-xl mb-8 text-gray-100">
-          Únete a nuestra comunidad de investigadores y desarrolladores apasionados por la tecnología.
-        </p>
-        <app-button variant="secondary" size="lg" routerLink="/contacto">
-          Contacta con Nosotros
-        </app-button>
       </div>
     </section>
   `
@@ -176,7 +172,7 @@ export class InicioComponent {
     this.titleService.setTitle('Inicio - SINDES FESC');
     this.metaService.updateTag({
       name: 'description',
-      content: 'Semillero de Investigación en Desarrollo de Software e Inteligencia Artificial de la FESC.'
+      content: 'Semillero de Investigación en Inteligencia Artificial y Redes Neuronales de la FESC.'
     });
   }
 }

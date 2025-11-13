@@ -17,10 +17,11 @@ interface NavLink {
     <header class="sticky top-0 z-50 bg-white shadow-sm">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Navegación principal">
         <div class="flex items-center justify-between h-16">
+
           <!-- Logo -->
           <a routerLink="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity" aria-label="Inicio - SINDES FESC">
-            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span class="text-white font-bold text-xl">S</span>
+            <div class="w-20 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-xl">FESC</span>
             </div>
             <div class="hidden sm:block">
               <div class="text-lg font-bold text-quaternary">SINDES</div>
@@ -38,13 +39,6 @@ interface NavLink {
               class="px-4 py-2 rounded-lg text-sm font-medium text-quaternary hover:bg-secondary transition-colors">
               {{ link.label }}
             </a>
-          </div>
-
-          <!-- CTA Button (Desktop) -->
-          <div class="hidden lg:block">
-            <app-button variant="primary" size="sm" routerLink="/contacto">
-              Contáctanos
-            </app-button>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -74,9 +68,6 @@ interface NavLink {
               {{ link.label }}
             </a>
             <div class="px-4 pt-2">
-              <app-button variant="primary" size="md" routerLink="/contacto" class="w-full">
-                Contáctanos
-              </app-button>
             </div>
           </div>
         </div>
@@ -95,7 +86,6 @@ export class HeaderComponent {
     { label: 'Proyectos', route: '/proyectos' },
     { label: 'Logros', route: '/logros' },
     { label: 'Eventos', route: '/eventos' },
-    { label: 'Formación', route: '/formacion' },
     { label: 'Galería', route: '/galeria' }
   ];
 

@@ -30,16 +30,8 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/eventos/eventos.component').then(m => m.EventosComponent)
   },
   {
-    path: 'formacion',
-    loadComponent: () => import('./pages/formacion/formacion.component').then(m => m.FormacionComponent)
-  },
-  {
     path: 'galeria',
     loadComponent: () => import('./pages/galeria/galeria.component').then(m => m.GaleriaComponent)
-  },
-  {
-    path: 'contacto',
-    loadComponent: () => import('./pages/contacto/contacto.component').then(m => m.ContactoComponent)
   },
   {
     path: '**',
