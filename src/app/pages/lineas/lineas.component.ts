@@ -13,10 +13,10 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
   standalone: true,
   imports: [CommonModule, SectionComponent, CardComponent, BadgeComponent, IconComponent],
   template: `
-    <app-section titulo="Líneas de Investigación" subtitulo="Áreas de especialización y desarrollo del semillero" paddingY="xl">
+    <app-section titulo="Líneas de Investigación" subtitulo="Áreas de especialización y desarrollo del semillero" paddingY="xl" >
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <app-card *ngFor="let linea of lineas()" [imagenUrl]="linea.imagenUrl" [imageAlt]="linea.titulo" variant="elevated" padding="lg">
-          <div class="flex items-start gap-3 mb-4">
+          <div class="flex items-start gap-3 mb-4 flex justify-center">
             <div class="p-2 bg-primary/10 rounded-lg flex-shrink-0">
               <app-icon [name]="linea.icono || 'code'" [size]="24" classes="text-primary"></app-icon>
             </div>

@@ -50,18 +50,4 @@ export class DataService {
   getGaleria() {
     return this.galeria();
   }
-
-  // Simular envío de formulario de contacto
-  async enviarContacto(form: ContactoForm): Promise<{ success: boolean; message: string }> {
-    console.log('📧 Formulario de contacto recibido:', form);
-
-    // Simular delay de envío
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    // Simular respuesta exitosa
-    return {
-      success: true,
-      message: '¡Gracias por contactarnos! Responderemos pronto.'
-    };
-  }
 }
