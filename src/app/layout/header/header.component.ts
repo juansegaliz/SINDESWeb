@@ -20,8 +20,9 @@ interface NavLink {
 
           <!-- Logo -->
           <a routerLink="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity" aria-label="Inicio - SINDES FESC">
-            <div class="w-20 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span class="text-white font-bold text-xl">FESC</span>
+            <div class="w-20 h-10  items-center justify-center">
+              <!--<span class="text-white font-bold text-xl">FESC</span>,,,,     esto va justo en el div de arriba   class="w-20 h-10 bg-primary rounded-lg flex items-center justify-center"-->
+              <img src="https://www.fesc.edu.co/portal/archivos/identidad/Logo-FESC.png" alt="logo fesc">
             </div>
             <div class="hidden sm:block">
               <div class="text-lg font-bold text-quaternary">SINDES</div>

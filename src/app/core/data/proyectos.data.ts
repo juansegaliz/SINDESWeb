@@ -4,7 +4,7 @@ export const PROYECTOS_SEED: Proyecto[] = [
   {
     id: '1',
     titulo: 'Desarrolo de interfaz para la prediccion con inteligencia artificial de varìables atmosféricas relacionadas con energias renovables',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit enim lacus volutpat, id etiam dapibus porta.',
+    descripcion: 'Un proyecto orientado a crear una interfaz interactiva que permita visualizar y gestionar predicciones basadas en IA de la radiación solar.',
     estado: 'Finalizado',
     tecnologias: ['Angular', 'Node.js', 'PostgreSQL', 'Docker'],
     participantes: ['María Paula Rodríguez', 'Juan David Martínez'],
@@ -15,7 +15,7 @@ export const PROYECTOS_SEED: Proyecto[] = [
   {
     id: '2',
     titulo: 'Sistema para la detección de sentimientos mediante textos en diferentes contextos',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit enim lacus volutpat, id etiam dapibus porta.',
+    descripcion: 'Un sistema de procesamiento de lenguaje natural (NLP) capaz de: analizar textos (comentarios, mensajes, publicaciones), identificar si el sentimiento es positivo, negativo o neutral, adaptarse a diferentes contextos como educación, atención al cliente o redes sociales.',
     estado: 'Finalizado',
     tecnologias: ['Python', 'TensorFlow', 'OpenAI API', 'FastAPI'],
     participantes: ['Laura Camila Torres', 'Dr. Carlos Andrés Gómez'],
@@ -38,7 +38,7 @@ export const PROYECTOS_SEED: Proyecto[] = [
   {
     id: '4',
     titulo: 'Sistema automatico para la identificacion y clasificacion de facturas oseas tomadas por medios de rayos utilizando tecnicas de machine learning',
-    descripcion: 'Pipeline completo de integración y despliegue continuo para aplicaciones web institucionales.',
+    descripcion: "Desarrollo de un sistema de visión artificial capaz de analizar imágenes de rayos X para: identificar presencia de fracturas, clasificar el tipo de fractura, asistir a profesionales de la salud en diagnósticos más rápidos y precisos. Aplicado al ámbito de la salud digital y diagnóstico asistido por IA.",
     estado: 'Finalizado',
     tecnologias: ['GitHub Actions', 'Docker', 'AWS', 'Terraform'],
     participantes: ['Juan David Martínez'],

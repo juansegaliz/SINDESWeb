@@ -31,8 +31,8 @@ export const MIEMBROS_SEED: Miembro[] = [
     fotoUrl: 'https://avatars.githubusercontent.com/u/157184633?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit..',
     links: {
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      github: 'https://github.com/Tamagoshi0o',
+      linkedin: 'https://www.linkedin.com/in/david-tamayo-a353272a6/'
     }
   },
   {
@@ -53,7 +53,7 @@ export const MIEMBROS_SEED: Miembro[] = [
     fotoUrl: 'https://avatars.githubusercontent.com/u/234298814?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
-      github: 'https://github.com/estpdpuentes',
+      github: 'https://github.com/spottwais2000-ux',
       linkedin: 'https://linkedin.com'
 
     }
@@ -71,24 +71,24 @@ export const MIEMBROS_SEED: Miembro[] = [
   },
   {
     id: '7',
-    nombre: 'Luifer',
+    nombre: 'Luisa Fernanda Jaimes Restrepo',
     rol: 'Integrante',
     fotoUrl: 'https://avatars.githubusercontent.com/u/108437393?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/MostachoteRex',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav'
     }
   },
   {
     id: '8',
-    nombre: 'David Mendoza',
+    nombre: 'Juan David Mendoza Díaz',
     rol: 'Integrante',
     fotoUrl: 'https://avatars.githubusercontent.com/u/113571903?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/Anvid31',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/in/juan-david-mendoza-568569297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '
     }
   },
   {
@@ -99,29 +99,29 @@ export const MIEMBROS_SEED: Miembro[] = [
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/sharydvasquez',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/in/sharydvasquez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '
     }
   },
   {
     id: '10',
-    nombre: 'Maikoll Camacho',
+    nombre: 'Maikoll Santiago Camacho Rodriguez',
     rol: 'Integrante',
     fotoUrl: 'https://avatars.githubusercontent.com/u/234296617?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/MaikollCamacho',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/in/maikoll-camacho-b27b91351?utm_source=share_via&utm_content=profile&utm_medium=member_android'
     }
   },
   {
     id: '11',
-    nombre: 'Andres Leonardo Diaz',
+    nombre: 'Andres Leonardo Ortega Diaz',
     rol: 'Integrante',
     fotoUrl: 'https://avatars.githubusercontent.com/u/126957019?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/tomelias25',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'http://www.linkedin.com/in/leo-ortega-49ab10397'
     }
   },
   {
@@ -143,7 +143,7 @@ export const MIEMBROS_SEED: Miembro[] = [
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/Lionard-Prada',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/in/lionard-steven-prada-abreu-055b16397'
     }
   },
   {
@@ -159,13 +159,13 @@ export const MIEMBROS_SEED: Miembro[] = [
   },
   {
     id: '15',
-    nombre: 'Brayan ballen',
+    nombre: 'Brayan Camilo Ballen',
     rol: 'Integrante',
     fotoUrl: 'https://avatars.githubusercontent.com/u/190555587?v=4',
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     links: {
       github: 'https://github.com/Brayan-gil',
-      linkedin: 'https://linkedin.com'
+      linkedin: 'https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav'
     }
   },
 ];
