@@ -15,7 +15,7 @@ import { IconComponent } from "../../shared/ui/icon/icon.component";
       class="relative bg-gradient-to-br from-quaternary to-gray-800 text-white overflow-hidden"
     >
       <!-- Background Image -->
-      <div class="absolute inset-0 opacity-20">
+      <div class="absolute inset-0 opacity-20 pointer-events-none">
         <img
           src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1920"
           alt=""
@@ -49,16 +49,17 @@ import { IconComponent } from "../../shared/ui/icon/icon.component";
             Fundación de Estudios Superiores Comfanorte - FESC
           </p>
 
-          <!--<div class="flex justify-center">
+          <div class="flex justify-center">
             <app-button variant="primary" size="lg" routerLink="/equipo">
               Ver Integrantes
             </app-button>
-          </div> -->
+          </div> 
+
         </div>
       </div>
 
       <!-- Wave divider -->
-      <div class="absolute bottom-0 left-0 right-0">
+      <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
         <svg
           viewBox="0 0 1440 120"
           fill="none"

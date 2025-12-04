@@ -12,7 +12,7 @@ interface NavLink {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, ButtonComponent],
+  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent],
   template: `
     <header class="sticky top-0 z-50 bg-white shadow-sm">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Navegación principal">
