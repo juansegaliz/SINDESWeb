@@ -86,7 +86,7 @@ export class HeaderComponent {
     { label: 'Líneas', route: '/lineas' },
     { label: 'Proyectos', route: '/proyectos' },
     { label: 'Logros', route: '/logros' },
-    { label: 'Eventos', route: '/eventos' },
+    /*{ label: 'Eventos', route: '/eventos' },*/
     { label: 'Galería', route: '/galeria' }
   ];
 

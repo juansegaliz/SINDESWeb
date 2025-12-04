@@ -49,11 +49,11 @@ import { IconComponent } from "../../shared/ui/icon/icon.component";
             Fundación de Estudios Superiores Comfanorte - FESC
           </p>
 
-          <div class="flex justify-center">
+          <!--<div class="flex justify-center">
             <app-button variant="primary" size="lg" routerLink="/equipo">
               Ver Integrantes
             </app-button>
-          </div>
+          </div> -->
         </div>
       </div>
 

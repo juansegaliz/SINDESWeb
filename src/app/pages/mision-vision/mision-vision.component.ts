@@ -73,12 +73,12 @@ import { IconComponent } from '../../shared/ui/icon/icon.component';
       </div>
 
       <!-- Imagen ilustrativa -->
-      <div class="mt-10 rounded-2xl overflow-hidden shadow-lg">
+      <!--<div class="mt-10 rounded-2xl overflow-hidden shadow-lg">
         <img
              src="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/485181578_1013348790886924_3225593262715188083_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF1KDkuwcNVA6-2uYr2wEtIewEzJJFRUUR7ATMkkVFRRNaPh_qjMpbZ_Y95vdnyNLG1gsmuNhjJ3fDRtaK2dNQB&_nc_ohc=1IwFXT3EhigQ7kNvwEkMfVv&_nc_oc=Adk6-ErBQlipHFotoXz-FptUE5L_AIaBzBERbAn0yeTMAyStcEhSQoqxPFEECGK7wI_rH80bP6F6JLfHfbMVdpWH&_nc_zt=23&_nc_ht=scontent.feoh3-1.fna&_nc_gid=tNa2t1PIiQDuWH0qC8HBrA&oh=00_AfggCFCswZBWe59tznFGDmdB_Ko4RDY3C9QWC1Rb8uCzBA&oe=6919E524"
       alt="Equipo de trabajo colaborativo"
     class="w-full h-80 object-cover object-bottom">
-</div>
+</div>-->
 
 
 
